@@ -47,9 +47,9 @@ jobs:
       - name: Third ID
         run: |
           python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.THIRD }}"
-    #  - name: Fourth Ik
-  #      run: |
-   #       python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
+      - name: Fourth Ik
+        run: |
+          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
       - name: Collect logs
         uses: actions/upload-artifact@v3
         with:
