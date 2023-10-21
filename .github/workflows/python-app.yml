@@ -41,15 +41,15 @@ jobs:
       - name: first id
         run: |
          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FIRST }}"
-      - name: Second ID
-        run: |
-          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.SECOND }}"
-      - name: Third ID
-        run: |
-          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.THIRD }}"
-      - name: Fourth Ik
-        run: |
-          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
+    #  - name: Second ID
+      #  run: |
+      #    python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.SECOND }}"
+    #  - name: Third ID
+    #    run: |
+    #      python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.THIRD }}"
+   #   - name: Fourth Ik
+   #     run: |
+   #       python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
       - name: Collect logs
         uses: actions/upload-artifact@v3
         with:
